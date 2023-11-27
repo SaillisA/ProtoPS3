@@ -16,5 +16,9 @@ public class Joueur : MonoBehaviour
     void Update()
     {
         
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            joueur.gameObject.transform.position = joueur.gameObject.transform.position + Vector3.right * 3;
+        }
     }
 }
